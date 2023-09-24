@@ -1,0 +1,18 @@
+function demo(input){
+    let film = input[0];
+    let r = Number(input[1]);
+    let c = Number(input[2]);
+    let price = 0;
+    switch(film){
+        case"Premiere":
+        price = (12 * r * c).toFixed(2);
+        break;
+        case"Normal":
+        price = (7.5 * r * c).toFixed(2);
+        break;
+        case"Discount":
+        price = (5 * r * c).toFixed(2);
+        break;
+    }
+    console.log(`${price} leva.`);
+}
